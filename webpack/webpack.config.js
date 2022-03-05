@@ -63,6 +63,38 @@ module.exports = {
         ],
       },
       {
+        test: /\.css$/,
+        include: [
+          path.resolve(__dirname, "..", "src"),
+          path.resolve(
+            __dirname,
+            "..",
+            "..",
+            "node_modules",
+            "leaflet",
+            "dist"
+          ),
+        ],
+        oneOf: [
+          {
+            test: /\.module\.css$/,
+            use: [
+              MiniCssExtractPlugin.loader,
+              {
+                loader: "css-loader",
+                options: {
+                  modules: { localIdentName: "[path][name]__[local]" },
+                  importLoaders: 1,
+                },
+              },
+            ],
+          },
+          {
+            use: [MiniCssExtractPlugin.loader, "css-loader"],
+          },
+        ],
+      },
+      {
         test: /\.svg$/, // import svg inline
         include: path.resolve(__dirname, "..", "src"),
         type: "asset/inline",
