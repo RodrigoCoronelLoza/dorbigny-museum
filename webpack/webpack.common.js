@@ -10,6 +10,9 @@ module.exports = {
     index: [path.resolve(__dirname, "..", "src", "scripts", "index.ts")],
   },
   target: "web",
+  devServer: {
+    static: "./public",
+  },
   output: {
     filename: "js/[name].[contenthash].js",
     path: path.resolve(__dirname, "..", "public"),
@@ -56,6 +59,21 @@ module.exports = {
             loader: "simple-pug-loader",
           },
         ],
+      },
+      {
+        test: /\.css$/,
+        include: [
+          path.resolve(__dirname, "..", "src"),
+          path.resolve(
+            __dirname,
+            "..",
+            "..",
+            "node_modules",
+            "leaflet",
+            "dist"
+          ),
+        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.svg$/, // import svg inline
