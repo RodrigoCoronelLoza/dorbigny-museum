@@ -1,0 +1,31 @@
+block meta
+- const title = "Museo Natural Alcide d'Orbigny - Patrimonio Cultural y Natural Boliviano"
+- const description = "El museo de Historia Natural Alcide d'Orbigny es patrimonio cultural y natural de Bolivia. En sus predios alberga 3 especies de murciélagos, 2 especies de anfibios y centenares de árboles. Actualmente se encuentra en riesgo de ser trasladado para dar lugar al Palacio de Convenciones del Municipio de Cochabamba."
+- const image = "https://geoarbol.com/covers/museo-dorbigny-logo.png"
+
+doctype html
+html(lang="es") 
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= title
+    meta(name="description" content= description)
+    meta(property="og:title" content= title)
+    meta(property="og:image" content= image )
+    meta(property="og:description" content= description)
+    meta(property="og:type" content="website")
+    meta(property="og:locale" content="es_LA")
+    // link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
+    // link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+    // link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+    // link(rel="manifest" href="/site.webmanifest")
+    // Global site tag (gtag.js) - Google Analytics
+    script(async src="https://www.googletagmanager.com/gtag/js?id=G-GZXV117EBK")
+    script
+      | window.dataLayer = window.dataLayer || [];
+      | function gtag(){dataLayer.push(arguments);}
+      | gtag('js', new Date());
+      | gtag('config', 'G-GZXV117EBK');
+  body
+    p Helloooooo
