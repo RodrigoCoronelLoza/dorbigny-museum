@@ -75,24 +75,7 @@ module.exports = {
             "dist"
           ),
         ],
-        oneOf: [
-          {
-            test: /\.module\.css$/,
-            use: [
-              MiniCssExtractPlugin.loader,
-              {
-                loader: "css-loader",
-                options: {
-                  modules: { localIdentName: "[path][name]__[local]" },
-                  importLoaders: 1,
-                },
-              },
-            ],
-          },
-          {
-            use: [MiniCssExtractPlugin.loader, "css-loader"],
-          },
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.svg$/, // import svg inline
