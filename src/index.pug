@@ -28,5 +28,14 @@ html(lang="es")
       | gtag('js', new Date());
       | gtag('config', 'G-GZXV117EBK');
   body
-    p Helloooooo
-    img(src=require("./assets/museum-navbar.jpg"))
+    #page-container
+      #content-wrap
+        block navbar
+          p Navbar comes here!
+
+        .main-content
+          block main
+            p Main content comes here!
+
+      block footer
+        footer footer comes here!
