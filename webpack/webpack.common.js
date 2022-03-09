@@ -11,6 +11,7 @@ module.exports = {
   target: "web",
   devServer: {
     static: "./public",
+    hot: true,
   },
   output: {
     filename: "js/[name].[contenthash].js",
