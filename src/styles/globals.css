@@ -3,6 +3,8 @@
   --footer-height: 4; /* rem */
   --font-color: #fff;
   --bg-color: #000;
+  --border-color: #787e8b;
+  --alt-color: #cac238;
 }
 
 /* CSS reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
