@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: calc(var(--navbar-height) * 1px);
+  padding: 10px 20px;
+  border-bottom: solid 2px var(--border-color);
+  align-items: center;
+}
+
+.navbar img {
+  display: inline;
+}
+
+.navbar__info {
+  width: 30px;
+  height: 30px;
+}
