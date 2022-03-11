@@ -12,5 +12,5 @@
     "preserveConstEnums": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["./src/**/*", "../typings/Globals.d.ts"]
+  "include": ["./src/**/*", "./typings/Globals.d.ts"]
 }
