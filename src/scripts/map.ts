@@ -1,14 +1,18 @@
-import L from "leaflet";
+import L, { LatLngBounds } from "leaflet";
 
+import DummyMap from "../assets/dummy-map.svg";
 import "../styles/map.css";
 
 const map = L.map("map", {
-  center: [20.0, 5.0],
-  minZoom: 2,
-  zoom: 2,
+  minZoom: -5,
+  crs: L.CRS.Simple,
 });
 
-L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-}).addTo(map);
+const imgUrl = DummyMap;
+const imageBounds: LatLngBounds = L.latLngBounds(
+  L.latLng(0, 0),
+  L.latLng(210, 297)
+);
+
+map.fitBounds(imageBounds);
+L.imageOverlay(imgUrl, imageBounds).addTo(map);
