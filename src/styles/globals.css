@@ -5,6 +5,7 @@
   --border-color: #787e8b;
   --font-color: var(--border-color);
   --alt-color: #cac238;
+  --modal-bg: 240, 240, 240;
 }
 
 /* CSS reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
