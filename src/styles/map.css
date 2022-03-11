@@ -2,3 +2,7 @@
   height: min(70vw, 50vh);
   margin-bottom: 1rem;
 }
+
+.museum-map-popup h4 {
+  color: var(--border-color);
+}
