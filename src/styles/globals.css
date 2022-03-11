@@ -1,9 +1,9 @@
 :root {
   --navbar-height: 60; /* px */
   --footer-height: 4; /* rem */
-  --font-color: #fff;
   --bg-color: #000;
   --border-color: #787e8b;
+  --font-color: var(--border-color);
   --alt-color: #cac238;
 }
 
