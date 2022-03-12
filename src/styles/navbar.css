@@ -14,6 +14,7 @@
 .navbar__info {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 /* Modal styles */
@@ -58,6 +59,10 @@
 .modal__attention,
 .modal__close {
   color: #000;
+}
+
+.modal__close {
+  cursor: pointer;
 }
 
 .modal__attention {
