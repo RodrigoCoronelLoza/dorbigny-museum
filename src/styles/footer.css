@@ -1,0 +1,14 @@
+footer {
+  border-top: solid 2px var(--border-color);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer p,
+footer a {
+  color: #fff;
+}
