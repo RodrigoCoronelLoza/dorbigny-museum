@@ -18,6 +18,7 @@
 * {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--font-color);
 }
 html,
 body {
@@ -82,10 +83,6 @@ code {
 
 body {
   background: var(--bg-color);
-}
-
-* {
-  color: var(--font-color);
 }
 
 #page-container {
