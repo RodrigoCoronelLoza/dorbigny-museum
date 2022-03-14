@@ -84,6 +84,20 @@
   padding: 1rem;
 }
 
+.modal__content p:first-of-type {
+  margin-top: 0.5rem;
+}
+
 .modal__content h2 {
+  font-size: 100%;
+  text-align: center;
+}
+
+.modal__content h2 span {
   color: #000;
+  display: block;
+}
+
+.modal__content p {
+  font-size: 90%;
 }
