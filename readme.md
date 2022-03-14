@@ -6,7 +6,7 @@ A website displaying the natural and cultural richness of the d'Orbigny Museum.
 
 ## General Info
 
-The website consists of a map with markers positioned at locations representative of the natural and cultural attributes of the site. For a detailed description, see the [spec](spec.md).
+The website consists of a map with markers positioned at locations representative of the natural and cultural attributes of the site. For a detailed description, see the [spec](docs/spec.md).
 
 ## Installation
 
