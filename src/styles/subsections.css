@@ -60,6 +60,16 @@
   height: 100%;
 }
 
-.p {
-  font-size: h4;
+.card__content {
+  padding: 2rem 1rem;
+  overflow-y: scroll;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.card__content h4 {
+  color: #000;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
 }
