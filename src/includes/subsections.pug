@@ -9,6 +9,16 @@ mixin card(src= srcStr, title= "Árbol", desc= descStr)
       .p= descStr 
       button HIDE
 
+mixin section(title= "Árboles", cards= [{src: srcStr, title: "Árbol", desc: descStr}, {src: srcStr, title: "Árbol", desc: descStr}])
+  .arboles
+    .section_header 
+      h3= title 
+      button &#9660
+    .section_card_container 
+      each card in cards 
+        +card(card.src, card.title, card.desc)
+
++section
 
 
 div.arboles
