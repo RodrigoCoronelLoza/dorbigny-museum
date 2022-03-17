@@ -1,5 +1,7 @@
 :root {
   --icon-size: 20; /* px */
+  --card-bg-color: #d3def5;
+  --card-height: 200; /* px */
 }
 
 .section__header {
@@ -45,9 +47,17 @@
   border: solid 1px var(--border-color);
 }
 
-img {
-  width: 100px;
-  height: 100px;
+.card__container {
+  position: relative;
+  background: var(--card-bg-color);
+  display: flex;
+  border-bottom: solid 1px var(--border-color);
+  height: calc(var(--card-height) * 1px);
+}
+
+.card__container img {
+  width: 160px;
+  height: 100%;
 }
 
 .p {
