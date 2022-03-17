@@ -14,7 +14,7 @@ mixin section(title= "Árboles", cards= [{src: srcStr, title: "Árbol", desc: de
   .section__container
     .section__header 
       h3= title 
-      button &#9660
+      button &or;
     .section__cards_container 
       each card in cards 
         +card(card.src, card.title, card.desc)

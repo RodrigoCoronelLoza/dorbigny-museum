@@ -39,6 +39,7 @@
   border: none;
   background: inherit;
   color: var(--alt-color);
+  transform: scale(1.5, 1);
 }
 
 .section__cards_container {
