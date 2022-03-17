@@ -2,19 +2,19 @@
 - const descStr = "Un árbol es una planta, de tallo leñoso, que se ramifica a cierta altura del suelo. ​ El término hace referencia habitualmente a aquellas plantas cuya altura supera un determinado límite en la madurez, diferente según las fuentes: dos metros,​ tres metros,​​ cinco metros​ o los seis metros."
 
 mixin card(src= srcStr, title= "Árbol", desc= descStr)
-  .tree1 
+  .card__container 
     img(src= srcStr)
-    .content  
+    .card__content  
       h4= title 
       .p= descStr 
       button HIDE
 
 mixin section(title= "Árboles", cards= [{src: srcStr, title: "Árbol", desc: descStr}, {src: srcStr, title: "Árbol", desc: descStr}])
-  .arboles
-    .section_header 
+  .section__container
+    .section__header 
       h3= title 
       button &#9660
-    .section_card_container 
+    .section__cards_container 
       each card in cards 
         +card(card.src, card.title, card.desc)
 
