@@ -4,10 +4,11 @@
 mixin card(src= srcStr, title= "Árbol", desc= descStr)
   .card__container 
     img(src= srcStr)
-    .card__content  
-      h4= title 
-      .p= descStr 
-      button HIDE
+    .card__content_container
+      .card__content  
+        h4= title 
+        p= descStr 
+        button &and;
 
 mixin section(title= "Árboles", cards= [{src: srcStr, title: "Árbol", desc: descStr}, {src: srcStr, title: "Árbol", desc: descStr}])
   .section__container

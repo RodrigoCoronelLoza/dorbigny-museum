@@ -60,11 +60,21 @@
   height: 100%;
 }
 
+.card__content_container {
+  padding-bottom: 1.5rem;
+  height: calc(var(--card-height) * 1px);
+}
+
 .card__content {
+  height: 100%;
   padding: 2rem 1rem;
+  padding-bottom: 0;
   overflow-y: scroll;
   font-size: 80%;
   font-weight: bold;
+}
+
+.card__content p {
   line-height: normal;
 }
 
@@ -72,4 +82,14 @@
   color: #000;
   margin-bottom: 0.25rem;
   text-transform: uppercase;
+}
+
+.card__content button {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.25rem;
+  border: none;
+  background: none;
+  transform: scaleX(1.5);
+  font-weight: normal;
 }
