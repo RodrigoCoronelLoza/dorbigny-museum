@@ -40,6 +40,7 @@
   background: inherit;
   color: var(--alt-color);
   transform: scale(1.5, 1);
+  cursor: pointer;
 }
 
 .section__cards_container {
@@ -93,4 +94,5 @@
   background: none;
   transform: scaleX(1.5);
   font-weight: normal;
+  cursor: pointer;
 }
