@@ -1,27 +1,22 @@
-- const src = "https://www.colorbook.io/imagecreator.php?hex=1168A6&width=150&height=150"
+- const srcStr = "https://www.colorbook.io/imagecreator.php?hex=1168A6&width=150&height=150"
+- const descStr = "Un árbol es una planta, de tallo leñoso, que se ramifica a cierta altura del suelo. ​ El término hace referencia habitualmente a aquellas plantas cuya altura supera un determinado límite en la madurez, diferente según las fuentes: dos metros,​ tres metros,​​ cinco metros​ o los seis metros."
+
+mixin card(src= srcStr, title= "Árbol", desc= descStr)
+  .tree1 
+    img(src= srcStr)
+    .content  
+      h4= title 
+      .p= descStr 
+      button HIDE
+
+
+
 div.arboles
     .section_header 
         h3 ARBOLES 
         button &#9660
-    .section_card_container 
-        .tree1 
-            img(src= src)
-            .content  
-                h4 ARBOL1
-                .p Un árbol es una planta, de tallo leñoso, que se ramifica a cierta altura del suelo. ​ El término hace referencia habitualmente a aquellas plantas cuya altura supera un determinado límite en la madurez, diferente según las fuentes: dos metros,​ tres metros,​​ cinco metros​ o los seis metros.
-                    button HIDE
-        .tree2 
-            img(src= src)
-            .content  
-                h4 ARBOL2
-                .p Un árbol es una planta, de tallo leñoso, que se ramifica a cierta altura del suelo. ​ El término hace referencia habitualmente a aquellas plantas cuya altura supera un determinado límite en la madurez, diferente según las fuentes: dos metros,​ tres metros,​​ cinco metros​ o los seis metros.
-                    button HIDE
-        .tree3
-            img(src= src)
-            .content  
-                h4 ARBOL3
-                .p Un árbol es una planta, de tallo leñoso, que se ramifica a cierta altura del suelo. ​ El término hace referencia habitualmente a aquellas plantas cuya altura supera un determinado límite en la madurez, diferente según las fuentes: dos metros,​ tres metros,​​ cinco metros​ o los seis metros.
-                    button HIDE
+    .section_card_container
+        +card 
 
 div.mamiferos
     .section_header
