@@ -8,6 +8,9 @@
   --modal-bg: 240, 240, 240;
 }
 
+/* font: "Arimo" */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&display=swap");
+
 /* CSS reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
 
 *,
@@ -17,11 +20,11 @@
 }
 * {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--font-color);
 }
 html,
 body {
+  font-family: "Arimo", sans-serif;
   height: 100%;
 }
 body {
