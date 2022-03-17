@@ -1,4 +1,45 @@
-.tree1 {
+:root {
+  --icon-size: 20; /* px */
+}
+
+.section__header {
+  display: flex;
+  border: 1px solid var(--border-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__header {
+  padding: 0.5rem 2rem;
+}
+
+.section__header h3 {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 100%;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.section__header h3::before {
+  content: "";
+  display: inline-block;
+  width: calc(var(--icon-size) * 1px);
+  height: calc(var(--icon-size) * 1px);
+  background-image: url("../assets/tree-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  padding-right: 2rem;
+}
+
+.section__header button {
+  border: none;
+  background: inherit;
+  color: var(--alt-color);
+}
+
+.section__cards_container {
   display: flex;
   border: 1px solid gray;
 }
@@ -10,11 +51,4 @@ img {
 
 .p {
   font-size: h4;
-}
-
-.section_header {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid gray;
-  justify-content: space-between;
 }
