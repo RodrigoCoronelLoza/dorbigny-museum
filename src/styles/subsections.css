@@ -41,7 +41,8 @@
 
 .section__cards_container {
   display: flex;
-  border: 1px solid gray;
+  flex-direction: column;
+  border: solid 1px var(--border-color);
 }
 
 img {
