@@ -12,16 +12,16 @@ mixin card(src= srcStr, title= "Árbol", desc= descStr)
         button &and;
 
 mixin section(title= "Árboles", cards= [{src: srcStr, title: "Árbol", desc: descStr}, {src: srcStr, title: "Árbol", desc: descStr}])
-  .section__container
-    .section__header 
+  div(id!=attributes.id class="section__container")
+    .section__header
       h3= title 
       button &or;
     .section__cards_container.hidden 
       each card in cards 
         +card(card.src, card.title, card.desc)
 
-+section("Anfibios", anfibiosData)
-+section("Árboles")
-+section("Aves")
-+section("Murciélagos")
-+section("Museo")
++section("Anfibios", anfibiosData)(id="frogs-section")
++section("Árboles")(id="trees-section")
++section("Aves")(id="birds-section")
++section("Murciélagos")(id="bats-section")
++section("Museo")(id="museum-section")
