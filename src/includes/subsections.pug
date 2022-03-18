@@ -3,11 +3,11 @@
 
 mixin card(src= srcStr, title= "Árbol", desc= descStr)
   .card__container 
-    img(src= srcStr)
+    img(src= src)
     .card__content_container
       .card__content  
         h4= title 
-        p= descStr 
+        p= desc 
         button &and;
 
 mixin section(title= "Árboles", cards= [{src: srcStr, title: "Árbol", desc: descStr}, {src: srcStr, title: "Árbol", desc: descStr}])
