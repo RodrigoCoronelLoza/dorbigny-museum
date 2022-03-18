@@ -33,7 +33,7 @@ export const showSectionFuncs: Record<string, () => void> = {};
 sectionIds.forEach(
   (sectionId: string, index) =>
     (showSectionFuncs[sectionId] = () => {
-      document.getElementById(sectionId)?.focus();
+      document.getElementById(sectionId)?.scrollIntoView();
       hideMySection(sections[index])();
     })
 );

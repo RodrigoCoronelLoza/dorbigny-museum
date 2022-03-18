@@ -1,5 +1,7 @@
 import L from "leaflet";
 
+import { showSectionFuncs } from "../subsections";
+
 const popupOptions: L.PopupOptions = {
   maxWidth: 250,
   maxHeight: 200,
@@ -9,7 +11,7 @@ const popupOptions: L.PopupOptions = {
 export const makePopup = (
   title: string,
   content: string,
-  refId: string
+  secId: string
 ): L.Popup => {
   const titleElem = document.createElement("h4");
   titleElem.textContent = title;
@@ -19,7 +21,9 @@ export const makePopup = (
   const popupButton = document.createElement("button");
   popupButton.textContent = "ver más >";
   popupButton.classList.add("popup-button");
-  popupButton.id = refId;
+  const openSectionFunc = showSectionFuncs[secId];
+  popupButton.addEventListener("click", openSectionFunc);
+
   const popupContent = document.createElement("div");
   popupContent.classList.add("popup-content");
   popupContent.textContent = content;
