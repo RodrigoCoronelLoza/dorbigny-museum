@@ -1,10 +1,14 @@
-const sections = [
+const sectionIds = [
   "frogs-section",
   "trees-section",
   "birds-section",
   "bats-section",
   "museum-section",
-].map((id) => <HTMLDivElement>document.getElementById(id));
+];
+
+const sections = sectionIds.map(
+  (id) => <HTMLDivElement>document.getElementById(id)
+);
 
 const hideMySection = (section: HTMLDivElement) => () =>
   section
@@ -23,3 +27,13 @@ export const addSectionsEventListeners = () => {
     );
   });
 };
+
+export const showSectionFuncs: Record<string, () => void> = {};
+
+sectionIds.forEach(
+  (sectionId: string, index) =>
+    (showSectionFuncs[sectionId] = () => {
+      document.getElementById(sectionId)?.focus();
+      hideMySection(sections[index])();
+    })
+);
