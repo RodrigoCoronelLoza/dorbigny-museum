@@ -75,3 +75,7 @@
   font-weight: bold;
   font-size: 100%;
 }
+
+.leaflet-container {
+  background: #000;
+}
