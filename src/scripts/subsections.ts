@@ -6,10 +6,6 @@ const sections = [
   "museum-section",
 ].map((id) => <HTMLDivElement>document.getElementById(id));
 
-/*const section = <HTMLDivElement>(
-  document.querySelector(".section__cards_container")
-);*/
-
 const hideMySection = (section: HTMLDivElement) => () =>
   section
     ?.querySelector(".section__cards_container")
@@ -17,17 +13,13 @@ const hideMySection = (section: HTMLDivElement) => () =>
 
 export const addSectionsEventListeners = () => {
   sections.forEach((section) => {
+    const hideSectionFunc = hideMySection(section);
     section
       ?.querySelector(".section__header button")
-      ?.addEventListener("click", hideMySection(section));
+      ?.addEventListener("click", hideSectionFunc);
+    const cards = section.querySelectorAll(".card__content button");
+    cards.forEach((button) =>
+      button.addEventListener("click", hideSectionFunc)
+    );
   });
-  /* document
-    .querySelector(".section__container .section__header button")
-    ?.addEventListener("click", hideSection);
-    
-  document
-    .querySelectorAll(
-      ".section__container .section__cards_container .card__container .card__content_container .card__content button"
-    )
-    .forEach((button) => button.addEventListener("click", hideSection));*/
 };
