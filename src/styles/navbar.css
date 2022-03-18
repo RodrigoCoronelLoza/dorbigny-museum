@@ -7,8 +7,14 @@
   align-items: center;
 }
 
+.navbar a {
+  display: flex;
+  align-items: center;
+}
+
 .navbar img {
   display: inline;
+  height: calc(var(--navbar-height) * 1px - 20px);
 }
 
 .navbar__info {
