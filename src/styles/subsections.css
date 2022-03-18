@@ -83,6 +83,8 @@
 
 .card__content h4 {
   color: #000;
+  font-size: 100%;
+  line-height: initial;
   margin-bottom: 0.25rem;
   text-transform: uppercase;
 }
