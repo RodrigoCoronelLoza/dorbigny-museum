@@ -71,10 +71,15 @@
   pointer-events: none;
 }
 
-.popup-link {
-  text-decoration: none;
+.popup-button {
+  font: inherit;
   font-weight: bold;
   font-size: 100%;
+  color: #000;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .leaflet-container {

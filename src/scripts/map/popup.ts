@@ -15,7 +15,7 @@ export const makePopup = (
   <div class="museum-map-popup-content">
     <div class="popup-title"><h4>${title}</h4></div>
     <div class="popup-content">${content}
-      <a class="popup-link" href="#${refId}">ver más ></a>
+      <button id="${refId}" class="popup-button">ver más ></button>
     </div>
   </div>`;
   return L.popup(popupOptions).setContent(popupContent);
