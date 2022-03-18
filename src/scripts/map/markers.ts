@@ -3,14 +3,7 @@ import L from "leaflet";
 import { svgIcon } from "./icon";
 import { makePopup } from "./popup";
 
-export const popupIds = {
-  "trees-section": "trees-popup-button",
-  "frogs-section": "frogs-popup-button",
-  "birds-section": "birds-popup-button",
-  "bats-section": "bats-popup-button",
-  "museum-section": "museum-popup-button",
-};
-
+// const lorem = "Culpa aut aut natus quia hic esse quidem. Error saepe tempore deleniti deserunt porro ut. Dolorem tenetur consequatur sed ea molestiae quo suscipit architecto. ";
 const treesText =
   "El Museo está ubicado en un terreno de casi 10’000 m2. Alberga más de un centenar de árboles de más de veinte especies diferentes.";
 const frogsText =
@@ -26,27 +19,27 @@ const addMarker = (map: L.Map, x: number, y: number, popup: L.Popup) =>
   L.marker([x, y], { icon: svgIcon }).addTo(map).bindPopup(popup);
 
 const addTreeMarker = (map: L.Map, x: number, y: number) => {
-  const popup = makePopup("árboles", treesText, popupIds["trees-section"]);
+  const popup = makePopup("árboles", treesText, "trees-section");
   addMarker(map, x, y, popup);
 };
 
 const addFrogMarker = (map: L.Map, x: number, y: number) => {
-  const popup = makePopup("anfibios", frogsText, popupIds["frogs-section"]);
+  const popup = makePopup("anfibios", frogsText, "frogs-section");
   addMarker(map, x, y, popup);
 };
 
 const addBirdMarker = (map: L.Map, x: number, y: number) => {
-  const popup = makePopup("aves", birdsText, popupIds["birds-section"]);
+  const popup = makePopup("aves", birdsText, "birds-section");
   addMarker(map, x, y, popup);
 };
 
 const addBatMarker = (map: L.Map, x: number, y: number) => {
-  const popup = makePopup("murciélagos", batsText, popupIds["bats-section"]);
+  const popup = makePopup("murciélagos", batsText, "bats-section");
   addMarker(map, x, y, popup);
 };
 
 const addMuseumMarker = (map: L.Map, x: number, y: number) => {
-  const popup = makePopup("museo", museumText, popupIds["museum-section"]);
+  const popup = makePopup("museo", museumText, "museum-section");
   addMarker(map, x, y, popup);
 };
 
