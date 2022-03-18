@@ -59,7 +59,6 @@
 
 .card__container img {
   width: 160px;
-  height: 100%;
   object-fit: cover;
 }
 
