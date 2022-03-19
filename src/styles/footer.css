@@ -21,6 +21,16 @@ footer button {
   text-decoration: underline;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10001;
+  background: rgba(0, 0, 0, 0.6);
+}
+
 .colaborators {
   padding: 0;
   position: fixed;
