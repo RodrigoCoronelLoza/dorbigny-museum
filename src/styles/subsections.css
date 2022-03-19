@@ -9,9 +9,9 @@
   border: 1px solid var(--border-color);
   justify-content: space-between;
   align-items: center;
-}
-
-.section__header {
+  width: 100%;
+  background: #000;
+  cursor: pointer;
   padding: 0.5rem 2rem;
 }
 
@@ -35,12 +35,9 @@
   padding-right: 2rem;
 }
 
-.section__header button {
-  border: none;
-  background: inherit;
+.section__header span {
   color: var(--alt-color);
   transform: scale(1.5, 1);
-  cursor: pointer;
 }
 
 .section__cards_container {

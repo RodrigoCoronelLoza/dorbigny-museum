@@ -19,7 +19,7 @@ export const addSectionsEventListeners = () => {
   sections.forEach((section) => {
     const hideSectionFunc = hideMySection(section);
     section
-      ?.querySelector(".section__header button")
+      ?.querySelector(".section__header")
       ?.addEventListener("click", hideSectionFunc);
     const cards = section.querySelectorAll(".card__content button");
     cards.forEach((button) =>

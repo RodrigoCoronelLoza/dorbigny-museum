@@ -18,9 +18,9 @@ mixin card(src= srcStr, title= "Árbol", desc= descStr, caption= "")
 
 mixin section(title= "Árboles", cards= [{src: srcStr, title: "Árbol", desc: descStr}, {src: srcStr, title: "Árbol", desc: descStr}])
   div(id!=attributes.id class="section__container")
-    .section__header
+    button.section__header
       h3= title 
-      button &or;
+      span &or;
     .section__cards_container.hidden 
       each card in cards 
         +card(card.src, card.title, card.desc, card.caption)
