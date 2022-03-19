@@ -10,10 +10,14 @@ const sections = sectionIds.map(
   (id) => <HTMLDivElement>document.getElementById(id)
 );
 
-const hideMySection = (section: HTMLDivElement) => () =>
-  section
-    ?.querySelector(".section__cards_container")
-    ?.classList.toggle("hidden");
+const hideMySection = (section: HTMLDivElement) => () => {
+  const span = <HTMLSpanElement>section.querySelector(".section__header span");
+  const cards = <HTMLDivElement>(
+    section?.querySelector(".section__cards_container")
+  );
+  span.innerHTML = cards?.classList.contains("hidden") ? "&and;" : "&or;";
+  cards?.classList.toggle("hidden");
+};
 
 export const addSectionsEventListeners = () => {
   sections.forEach((section) => {
