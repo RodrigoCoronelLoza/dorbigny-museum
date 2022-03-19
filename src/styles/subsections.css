@@ -58,6 +58,7 @@
 }
 
 .card__container figure {
+  position: relative;
   width: 160px;
   object-fit: cover;
 }
@@ -67,6 +68,17 @@
   height: 100%;
   object-fit: cover;
   max-width: none;
+}
+
+.card__container figure figcaption {
+  position: absolute;
+  background: #000;
+  color: #fff;
+  bottom: 0;
+  right: 0;
+  line-height: normal;
+  font-size: 75%;
+  text-align: right;
 }
 
 .card__content_container {

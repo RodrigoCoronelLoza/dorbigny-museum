@@ -4,10 +4,12 @@
 - const treesData = [{src: require("./assets/section-img/trees/1-lloque-min.jpg"), title: "Lloque", desc: "El lloque es una especie que se encuentra muy poco en la ciudad de Cochabamba. Aunque se lo puede encontrar en Argentina, Bolivia y Perú, es una especie amenazada por pérdida de hábitat. Este ejemplar fue traído al museo desde el vergel de Toro Toro."}, {src: require("./assets/section-img/trees/2-jacaranda-min.jpg"), title: "Jacarandá", desc: "El Jacarandá es una especie emblemática y muy querida en Cochabamba. Se encuentran con flores de color morado, rosado y blanco."}, {src: require("./assets/section-img/trees/3-ibirapita-min.jpg"), title: "Ibirapitá", desc: "Este magnífico ejemplar se encuentra al lado de la casona el Museo. Sus flores son de color amarillo. Al lado, se tiene plantado un limonero."}];
 - const birdsData = [{src: require("./assets/section-img/birds/1-colibri-min.jpg"), title: "Colibrí", desc: "El colibrí sorprende por sus colores brillantes, su pequeño tamaño y la velocidad de su aleteo. Cada vez más raros en Cercado, pueden encontrarse hasta tres especies diferentes de colibrís en los predios del Museo."}, {src: require("./assets/section-img/birds/2-naranjero-min.jpg"), title: "Naranjero", desc: "Esta simpática ave puede ser tan colorida que también se le llama “sietecolores”. Habitan mayormente en bosques, aunque también se los puede ver en algunas zonas urbanas como la del área verde del Museo."}, {src: require("./assets/section-img/birds/3-gavilan-min.jpg"), title: "Gavilán", desc: "Aunque pertenecen a hábitats naturales como bosques y montes, algunas de estas magníficas aves cazadoras decidieron hacer su hogar en las altas copas de los árboles del museo d’Orbigny y el Palacio Patiño."}]
 
-mixin card(src= srcStr, title= "Árbol", desc= descStr)
+mixin card(src= srcStr, title= "Árbol", desc= descStr, caption= "")
   .card__container 
     figure
-      img(src= src loading="lazy")
+      img(src= src loading="lazy" alt= title)
+      if caption
+        figcaption Foto: #{caption}
     .card__content_container
       .card__content  
         h4= title 
@@ -21,7 +23,7 @@ mixin section(title= "Árboles", cards= [{src: srcStr, title: "Árbol", desc: de
       button &or;
     .section__cards_container.hidden 
       each card in cards 
-        +card(card.src, card.title, card.desc)
+        +card(card.src, card.title, card.desc, card.caption)
 
 +section("Anfibios", anfibiosData)(id="frogs-section")
 +section("Árboles", treesData)(id="trees-section")
