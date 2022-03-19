@@ -117,3 +117,11 @@
   font-weight: normal;
   cursor: pointer;
 }
+
+#frogs-section figure {
+  background: #000;
+}
+
+#frogs-section img {
+  object-fit: contain;
+}
