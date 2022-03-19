@@ -12,3 +12,56 @@ footer p,
 footer a {
   color: #fff;
 }
+
+footer button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.colaborators {
+  padding: 0;
+  position: fixed;
+  z-index: 10001;
+  left: 50%;
+  transform: translate(-50%);
+  top: 15%;
+  max-width: 85%;
+  max-height: 70%;
+  overflow: scroll;
+  width: 25rem;
+  background: rgba(var(--modal-bg), 0.9);
+  border: none;
+}
+
+.colaborators header {
+  display: flex;
+  background: var(--alt-color);
+  border-bottom: solid 2px var(--border-color);
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.colaborators header h3 {
+  color: #000;
+  font-size: 120%;
+  margin-bottom: 0;
+}
+
+.colaborators header span {
+  color: #000;
+  align-self: flex-end;
+  font-size: 150%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.colaborators__content {
+  padding: 0.5rem 0.75rem;
+}
