@@ -6,7 +6,8 @@
 
 mixin card(src= srcStr, title= "Árbol", desc= descStr)
   .card__container 
-    img(src= src loading="lazy")
+    figure
+      img(src= src loading="lazy")
     .card__content_container
       .card__content  
         h4= title 
