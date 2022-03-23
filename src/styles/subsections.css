@@ -118,11 +118,13 @@
   cursor: pointer;
 }
 
-#frogs-section figure {
+#frogs-section figure,
+#bats-section figure {
   background: #000;
 }
 
-#frogs-section img {
+#frogs-section img,
+#bats-section img {
   object-fit: contain;
 }
 
