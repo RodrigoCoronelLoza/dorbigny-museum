@@ -19,27 +19,42 @@ const addMarker = (map: L.Map, x: number, y: number, popup: L.Popup) =>
   L.marker([x, y], { icon: svgIcon }).addTo(map).bindPopup(popup);
 
 const addTreeMarker = (map: L.Map, x: number, y: number) => {
-  const popup = makePopup("árboles", treesText, "trees-section");
+  const popup = makePopup("árboles", treesText, "trees-section", "trees-popup");
   addMarker(map, x, y, popup);
 };
 
 const addFrogMarker = (map: L.Map, x: number, y: number) => {
-  const popup = makePopup("anfibios", frogsText, "frogs-section");
+  const popup = makePopup(
+    "anfibios",
+    frogsText,
+    "frogs-section",
+    "frogs-popup"
+  );
   addMarker(map, x, y, popup);
 };
 
 const addBirdMarker = (map: L.Map, x: number, y: number) => {
-  const popup = makePopup("aves", birdsText, "birds-section");
+  const popup = makePopup("aves", birdsText, "birds-section", "birds-popup");
   addMarker(map, x, y, popup);
 };
 
 const addBatMarker = (map: L.Map, x: number, y: number) => {
-  const popup = makePopup("murciélagos", batsText, "bats-section");
+  const popup = makePopup(
+    "murciélagos",
+    batsText,
+    "bats-section",
+    "bats-popup"
+  );
   addMarker(map, x, y, popup);
 };
 
 const addMuseumMarker = (map: L.Map, x: number, y: number) => {
-  const popup = makePopup("museo", museumText, "museum-section");
+  const popup = makePopup(
+    "museo",
+    museumText,
+    "museum-section",
+    "museum-popup"
+  );
   addMarker(map, x, y, popup);
 };
 

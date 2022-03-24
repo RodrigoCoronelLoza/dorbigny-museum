@@ -11,7 +11,8 @@ const popupOptions: L.PopupOptions = {
 export const makePopup = (
   title: string,
   content: string,
-  secId: string
+  secId: string,
+  popupId: string
 ): L.Popup => {
   const titleElem = document.createElement("h4");
   titleElem.textContent = title;
@@ -26,6 +27,7 @@ export const makePopup = (
 
   const popupContent = document.createElement("div");
   popupContent.classList.add("popup-content");
+  popupContent.id = popupId;
   popupContent.textContent = content;
   popupContent.appendChild(popupButton);
 
