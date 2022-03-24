@@ -110,8 +110,8 @@
   padding: 2rem 1rem;
   padding-bottom: 0;
   overflow-y: scroll;
-  font-size: 80%;
-  font-weight: bold;
+  font-size: 85%;
+  /* font-weight: bold; */
 }
 
 .card__content p {
