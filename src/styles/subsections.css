@@ -28,11 +28,30 @@
   display: inline-block;
   width: calc(var(--icon-size) * 1px);
   height: calc(var(--icon-size) * 1px);
-  background-image: url("../assets/tree-icon.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
   padding-right: 2rem;
+}
+
+#frogs-section .section__header h3::before {
+  background-image: url("../assets/icons/frog.svg");
+}
+
+#trees-section .section__header h3::before {
+  background-image: url("../assets/icons/tree.svg");
+}
+
+#birds-section .section__header h3::before {
+  background-image: url("../assets/icons/bird.svg");
+}
+
+#bats-section .section__header h3::before {
+  background-image: url("../assets/icons/bat.svg");
+}
+
+#museum-section .section__header h3::before {
+  background-image: url("../assets/icons/museum.svg");
 }
 
 .section__header span {
