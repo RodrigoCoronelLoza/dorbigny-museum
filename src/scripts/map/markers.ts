@@ -59,9 +59,9 @@ const addMuseumMarker = (map: L.Map, x: number, y: number) => {
 };
 
 export const addMapMarkers = (map: L.Map) => {
-  addTreeMarker(map, 100, 100);
-  addFrogMarker(map, 100, 150);
-  addBirdMarker(map, 100, 200);
-  addBatMarker(map, 100, 250);
-  addMuseumMarker(map, 100, 50);
+  addTreeMarker(map, 220, 200);
+  addFrogMarker(map, 70, 535);
+  addBirdMarker(map, 220, 730);
+  addBatMarker(map, 350, 500);
+  addMuseumMarker(map, 50, 380);
 };
