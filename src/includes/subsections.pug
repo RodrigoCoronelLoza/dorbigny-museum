@@ -6,10 +6,11 @@
 
 mixin card(src, title= "Árbol", desc= "abc", caption= "")
   .card__container 
-    figure
-      img(src= src loading="lazy" alt= title)
-      if caption
-        figcaption Foto: #{caption}
+    if (src)
+      figure
+        img(src= src loading="lazy" alt= title)
+        if caption
+          figcaption Foto: #{caption}
     .card__content_container
       .card__content  
         h4= title 
