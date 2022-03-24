@@ -63,12 +63,31 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/tree-icon.svg");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
   opacity: 0.6;
   pointer-events: none;
+}
+
+#trees-popup::before {
+  background-image: url("../assets/icons/tree.svg");
+}
+
+#frogs-popup::before {
+  background-image: url("../assets/icons/frog.svg");
+}
+
+#birds-popup::before {
+  background-image: url("../assets/icons/bird.svg");
+}
+
+#bats-popup::before {
+  background-image: url("../assets/icons/bat.svg");
+}
+
+#museum-popup::before {
+  background-image: url("../assets/icons/museum.svg");
 }
 
 .popup-button {
