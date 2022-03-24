@@ -14,7 +14,7 @@ mixin card(src, title= "Árbol", desc= "abc", caption= "")
     .card__content_container
       .card__content  
         h4= title 
-        p= desc 
+        p!= desc 
         button &and;
 
 mixin section(title= "Árboles", cards= [{src: "", title: "Árbol", desc: "lorem", caption: "autor"}])
