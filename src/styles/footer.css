@@ -21,7 +21,7 @@ footer button {
   text-decoration: underline;
 }
 
-.backdrop {
+.collaborators__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -31,7 +31,7 @@ footer button {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.colaborators {
+.collaborators__modal {
   padding: 0;
   position: fixed;
   z-index: 10001;
@@ -46,7 +46,7 @@ footer button {
   border: none;
 }
 
-.colaborators header {
+.collaborators__modal header {
   display: flex;
   background: var(--alt-color);
   border-bottom: solid 2px var(--border-color);
@@ -57,13 +57,13 @@ footer button {
   justify-content: space-between;
 }
 
-.colaborators header h3 {
+.collaborators__modal header h3 {
   color: #000;
   font-size: 120%;
   margin-bottom: 0;
 }
 
-.colaborators header span {
+.collaborators__modal header span {
   color: #000;
   align-self: flex-end;
   font-size: 150%;
@@ -72,6 +72,6 @@ footer button {
   align-items: center;
 }
 
-.colaborators__content {
+.collaborators__content {
   padding: 0.5rem 0.75rem;
 }
