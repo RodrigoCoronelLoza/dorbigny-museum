@@ -7,7 +7,7 @@ import { makePopup } from "./popup";
 const treesText =
   "El Museo está ubicado en un terreno de casi 10’000 m2. Alberga más de un centenar de árboles de más de veinte especies diferentes.";
 const frogsText =
-  "El Centro K’ayra se dedica a la conservación de especies de anfibios amenazadas de extinción. Su habitante más famoso es #RomeotheFrog, ¡hasta hace poco considerado el último de su especie!";
+  'El Centro K’ayra se dedica a la conservación de especies de anfibios amenazadas de extinción. Su habitante más famoso es <a href="http://museodorbigny.org/?p=447">@RomeoTheFrog</a>, ¡hasta hace poco considerado el último de su especie!';
 const birdsText =
   "Al visitar el Museo, ¡te sorprenderá el canto de los pájaros! Muchas aves anidan en los árboles de los predios del museo o lo visitan durante sus rutas migratorias.";
 const batsText =
