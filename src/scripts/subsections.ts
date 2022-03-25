@@ -10,20 +10,17 @@ const sections = sectionIds.map(
   (id) => <HTMLDivElement>document.getElementById(id)
 );
 
-const scrollCardsToTop = () => {
-  document
-    .querySelectorAll(".card__content")
-    .forEach((card) => (card.scrollTop = 0));
-};
-
 const hideMySection = (section: HTMLDivElement) => () => {
   const span = <HTMLSpanElement>section.querySelector(".section__header span");
   const cards = <HTMLDivElement>(
     section?.querySelector(".section__cards_container")
   );
+  if (cards?.classList.contains("hidden"))
+    section
+      .querySelectorAll(".card__content")
+      .forEach((card) => (card.scrollTop = 0));
   span.innerHTML = cards?.classList.contains("hidden") ? "&and;" : "&or;";
   cards?.classList.toggle("hidden");
-  scrollCardsToTop();
 };
 
 export const addSectionsEventListeners = () => {
