@@ -28,7 +28,7 @@ export const makePopup = (
   const popupContent = document.createElement("div");
   popupContent.classList.add("popup-content");
   popupContent.id = popupId;
-  popupContent.textContent = content;
+  popupContent.innerHTML = content;
   popupContent.appendChild(popupButton);
 
   const container = document.createElement("div");
